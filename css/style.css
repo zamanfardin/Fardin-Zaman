@@ -145,7 +145,23 @@ img {
   align-items: center;
   height: calc(var(--header-height) + 2rem);
   transition: .4s;
-}   
+} 
+
+.menu {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--first-color);
+  text-decoration: none;
+}
 
 .logo {
   display: inline-flex;
@@ -492,6 +508,7 @@ img {
 .award-title {
     font-size: 1.25rem;
     font-weight: var(--font-medium);
+    margin-bottom: 15px;
     
 }
 
@@ -1495,6 +1512,8 @@ img {
     margin-right: 1.5rem;
   }
 
+  
+
   .about-reward{
     column-gap: 1.875rem;
   }
@@ -1550,6 +1569,7 @@ img {
 
   .award-title{
     font-size: var(--normal-font-size);
+    
   }
 
   .about-detail{
@@ -1612,36 +1632,45 @@ img {
     padding: 2.5rem 0 2rem;
   }
 
-  .nav{
-    height: var(--header-height);
+  
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--container-color);
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+
   }
 
-  .menu{
-    position: fixed;
-    background-color: var(--container-color);
-    top: -100;
+  .menu.show {
     right: 0;
-    width: 80%;
-    height: 100%;
-    padding: 4rem 0 0 3rem;
-    box-shadow: -2px 0 4px hsla(250, 24%, 25%, .1);
-
   }
 
   .list{
     flex-direction: column;
-    row-gap: 1.5rem;
+    gap: 1.5rem;
 
   }
 
-  .toggle, .close{
+  .toggle{
     display: block;
 
   }
 
-  .nav-logo{
-    width: 90px;
+  .close {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
   }
+
+  
 
   .home{
     padding: 9rem 0 2rem;

@@ -13,32 +13,33 @@
 
 <body>
   <header class="header" id="header">
-    <nav class="nav container">
-      <a href="index.html" class="nav__logo">
-        <div class="logo">
-          <a href="#"><span>F</span>Z</a>
-        </div>
-      </a>
-      <div class="menu" id="menu">
-        <ul class="list">
-          <li class="item"><a href="#home" class="link active-link">Home</a></li>
-          <li class="item"><a href="#about" class="link">About</a></li>
-          <li class="item"><a href="#services" class="link">Services</a></li>
-          <li class="item"><a href="#work" class="link">Work</a></li>
-          <li class="item"><a href="#experience" class="link">Experience</a></li>
-          <li class="item"><a href="#testimonials" class="link">Testimonials</a></li>
-          <li class="item"><a href="#skills" class="link">Skills</a></li>
-          <li class="item"><a href="#contact" class="link">Contact</a></li>
-        </ul>
-        <div class="close" id="close">
-          <i class="bx bx-x"></i>
-        </div>
+  <nav class="nav container">
+    <a href="index.html" class="nav__logo">
+      <span class="logo"><span>F</span>Z</span>
+    </a>
+
+    <div class="menu" id="menu">
+      <ul class="list">
+        <li class="item"><a href="#home" class="link active-link">Home</a></li>
+        <li class="item"><a href="#about" class="link">About</a></li>
+        <li class="item"><a href="#services" class="link">Services</a></li>
+        <li class="item"><a href="#work" class="link">Work</a></li>
+        <li class="item"><a href="#experience" class="link">Experience</a></li>
+        <li class="item"><a href="#testimonials" class="link">Testimonials</a></li>
+        <li class="item"><a href="#skills" class="link">Skills</a></li>
+        <li class="item"><a href="#contact" class="link">Contact</a></li>
+      </ul>
+      <div class="close" id="close">
+        <i class="bx bx-x"></i>
       </div>
-      <div class="toggle" id="toggle">
-        <i class="bx bx-grid-alt"></i>
-      </div>
-    </nav>
-  </header>
+    </div>
+
+    <div class="toggle" id="toggle">
+      <i class="bx bx-grid-alt"></i>
+    </div>
+  </nav>
+</header>
+
 
   <main class="main">
     <section class="home container" id="home">
@@ -102,12 +103,12 @@
             currently pursuing a Master’s in Cybersecurity at UniSQ, Australia. I build modern, secure web solutions and
             aim to launch a tech farm in Bangladesh
             focused on cybersecurity and digital innovation</p>
-          <p class="about-details">LLLLL LLLLL LLLL LLLLL LLLLL LLLLLL LLLLL</p>
+          <p class="about-details">Delivering impactful digital solutions with a focus on performance and security.</p>
           <div class="about-reward grid">
             <img src="image/5.jpg" alt="" class="award-img" />
             <div>
-              <h3 class="award-title">International Photography <br />Awards 2016</h3>
-              <p class="award-details">LLLL LLLL LLLL LLLL</p>
+              <h3 class="award-title">Freelance Developer – <br>Multiple Completed Projects  </h3>
+              <p class="award-details">Managed and delivered client-focused web applications using Laravel, React, and MySQL.</p>
             </div>
           </div>
         </div>
@@ -316,34 +317,33 @@
       <div class="achievement-container container">
         <div class="achievement-card">
           <div class="achievement-img-box">
-            <img src="image/p8.jpg" alt="Hackathon Award" class="achievement-img">
+            <img  src="image/thesis.jpg" alt="Hackathon Award" class="achievement-img" href="https://ieeexplore.ieee.org/document/10730688" >
           </div>
           <div class="achievement-content">
-            <h3 class="achievement-title">National Hackathon 2024</h3>
-            <p class="achievement-text">1st Place in National Hackathon 2024 for developing a real-time flood monitoring
-              system using IoT and AI.</p>
+            <h3 class="achievement-title">Thesis Paper Acceptance</h3>
+            <p class="achievement-text">Optimizing Citrus Leaf Disease Detection: An Efficient Custom CNN Leveraging
+ Efficient Training Parameters</p>
           </div>
         </div>
 
         <div class="achievement-card">
           <div class="achievement-img-box">
-            <img src="image/p8.jpg" alt="UI Design Award" class="achievement-img">
+            <img src="image/project.jpeg" alt="project" class="achievement-img">
           </div>
           <div class="achievement-content">
-            <h3 class="achievement-title">Best UI Designer</h3>
-            <p class="achievement-text">Awarded "Best UI/UX Designer" at SoftBd for creating highly intuitive web and
-              mobile designs.</p>
+            <h3 class="achievement-title">GIS and Multiple projects</h3>
+            <p class="achievement-text">I have actively worked on multiple projects utilizing Geographic Information Systems (GIS), applying spatial analysis and mapping techniques to solve real-world problems. From environmental monitoring to infrastructure planning, these projects have enhanced my technical skills and
+               deepened my understanding of spatial data. </p>
           </div>
         </div>
 
         <div class="achievement-card">
           <div class="achievement-img-box">
-            <img src="image/p8.jpg" alt="Cybersecurity Badge" class="achievement-img">
+            <img src="image/uni.jpg" alt="Unisports " class="achievement-img">
           </div>
           <div class="achievement-content">
-            <h3 class="achievement-title">Cybersecurity Certification</h3>
-            <p class="achievement-text">Earned Google's Cybersecurity Badge showcasing expertise in network defense and
-              threat detection.</p>
+            <h3 class="achievement-title">UniSports National Selection</h3>
+            <p class="achievement-text">Being selected for the UniSports National Team was a proud and defining moment in my journey. It recognized my dedication, hard work, and passion for sports, and gave me the incredible opportunity to represent my university at a national level. </p>
           </div>
         </div>
       </div>
@@ -548,6 +548,20 @@
   </main>
 
   <script src="js/swiper-bundle.min.js"></script>
+  <script>
+  const toggle = document.getElementById('toggle');
+  const menu = document.getElementById('menu');
+  const close = document.getElementById('close');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.add('show');
+  });
+
+  close.addEventListener('click', () => {
+    menu.classList.remove('show');
+  });
+</script>
+
   <script>
     // Skill data with optional icons (you can customize the icons using Boxicons or any other)
     const skillsData = {
